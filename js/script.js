@@ -7,6 +7,9 @@ const AIGUILLESEC = document.querySelector("#second");
 let curentTime = new Date();
 
 //Stocker l'heure , minute , seconde  dans des varaiables
+let hours = curentTime.getHours();
+let minutes = curentTime.getMinutes();
+let seconds = curentTime.getSeconds();
 
 // Calculer de degré de mouvement de l'aiguille heure, de l'aiguille minute, de l'aiguille seconde
 // Hint : Tous les aiguilles doivent se déplacer chaque second selon un degré

@@ -4,6 +4,7 @@ const AIGUILLEMIN = document.querySelector("#minute");
 const AIGUILLESEC = document.querySelector("#second");
 
 //Extraire l'heure actuel à l'aide de l'objet Date()
+let curentTime = new Date();
 
 //Stocker l'heure , minute , seconde  dans des varaiables
 

@@ -23,6 +23,14 @@ AIGUILLEMIN.style.transform = `rotate(` + min + `deg)`;
 AIGUILLEHR.style.transform = `rotate(` + hr + `deg)`;
 
 // Déplacer les aiguilles
-function demarrerLaMontre() {}
+function demarrerLaMontre() {
+  sec += 6;
+  min += 0.1;
+  hr += 360 / 43200;
+
+  AIGUILLESEC.style.transform = `rotate(` + sec + `deg)`;
+  AIGUILLEMIN.style.transform = `rotate(` + min + `deg)`;
+  AIGUILLEHR.style.transform = `rotate(` + hr + `deg)`;
+}
 // Exercuter la fonction chaque second
 var interval = setInterval(demarrerLaMontre, 1000);
